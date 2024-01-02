@@ -1,0 +1,196 @@
+ 
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'League Spartan', sans-serif;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-color: hsl(222, 26%, 31%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+        .box1{
+            width: 30vw;
+
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .theme{
+            width: 110px;
+            padding: 0%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            font-size: 10px;
+          
+        }
+        .theme div{
+            display: flex;
+            flex-direction: column;
+        }
+        .labell{
+            width: 55px;
+            height: 18px;
+            background-color: hsl(223, 31%, 20%);
+            border-radius: 200px;
+            position: relative;
+            display: flex;
+            transition: all 0.4s ease;
+            align-items: center;
+        }
+        .labell::after{
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 3px;
+            background-color: red;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }.theme input{
+            display: none;
+        }
+        .label2::after{
+            left: 33%;
+        }
+        .label2{
+            background-color: hsl(0, 5%, 81%);
+        }
+        .label3::after{
+            left: 66%;
+            background-color:  hsl(176, 100%, 44%);
+        }
+        .label3{
+            background-color:  hsl(281, 89%, 26%);
+        }
+        .box2{
+            width: 30vw;
+            height: 15vh;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            /* border: 1px solid white; */
+            color: white;
+            text-align:center;
+            position: relative;
+            background-color: hsl(223, 31%, 20%);
+        }
+        .box2 p{
+            
+            padding: 10px;
+            font-size: 25px;
+        }
+        .box22{
+            background-color: hsl(0, 5%, 81%);
+            color: black;
+        }
+        .box23{
+            background-color: hsl(281, 89%, 26%);
+            color: white;
+        }
+        .box3{
+            width: 30vw;
+            height: auto;
+            background-color: hsl(223, 31%, 20%);
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .box3 button{
+            width: 6vw;
+            height: 40px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            text-decoration: solid;
+            text-align: center;
+            font-size: 18px;
+           
+        }
+        .lastline
+        {
+            width: 25vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        .lastline button{
+            width: 13vw;
+            margin: 5px;
+            color: white;
+        }
+       .box32{
+        background-color: hsl(0, 5%, 81%);
+           
+       }
+       .box33{
+       background-color: hsl(281, 89%, 26%);
+        }
+     @media screen and (max-width:1000px) {
+        main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-self:stretch;
+            font-size: 30px;
+        }
+        .theme{
+            font-size: 15px;
+            width: 150px;
+        }
+        .labell{
+width: 78px;
+height: 30px;
+position: relative;
+padding: auto;
+        }
+        .labell::after{
+            position: absolute;
+            width:20px;
+            height: 20px;
+            margin: 1px;
+            top: 4px;;
+        }
+        .box1{
+width: 80vw;
+        }
+        .box2{
+            width: 80vw;
+            height: 10vh;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+        .box2 p{
+            padding: 0px;
+            padding-right: 10px;
+        }
+        .box3{
+            width: 80vw;
+        }
+        .box3 button{
+            width: 15vw;
+            height: 10vh;
+            font-size: 25px;
+            text-align: center;
+        }
+        .lastline{
+            width: 73vw;
+        }
+        .lastline button{
+            width: 34vw;
+        }
+     }

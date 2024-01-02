@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<!-- <link rel="stylesheet" href="index.js"> -->
+</head>
+<body>
+    <main>
+        <div class="box1">
+            <p>calc</p>
+            <div class="theme">
+                <p>THEME</p>
+                <div>
+                   <p>&nbsp 1 &nbsp &nbsp 2  &nbsp &nbsp 3</p> 
+               <input type="checkbox" name="theme" id="toggle">
+               
+                <label for="toggle" class="labell"></label>
+            </div>
+            </div>
+        </div>
+        <div class="box2">
+<p class="p1"></p>
+<p class="p2"></p>
+        </div>
+        <div class="box3">
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="clearDisplay1()" style="background-color: hsl(222, 26%, 31%);color:white;">DEL</button>
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendOperator('-')">-</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendOperator('/')">/</button>
+            <button onclick="appendOperator('*')">*</button>
+            <div class="lastline">
+                <button onclick="clearDisplay()" style="background-color: hsl(222, 26%, 31%)">Reset</button>
+                <button onclick="calculateResult()" style="background-color: red;">=</button>
+            </div>
+        </div>
+    </main>
+   <script src="index.js"></script>
+    
+</body>
+</html>
